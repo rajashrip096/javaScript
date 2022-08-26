@@ -1,0 +1,28 @@
+<html>
+<head></head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <script>
+        //Create an object Mobile & display features of an object, give 10 % discount 
+        //on mobile price & display it.
+        var mobile = {
+            camera:50,
+            ram:8,
+            price:50000,
+
+            Display: function () {
+                return "camera " + this.camera + " ram " + this.ram + " price " + this.price;
+            },
+            Discountprice: function () {
+                var result;
+                result = this.price * 0.10;
+                return result;
+            }
+        }
+        document.getElementById("d1").innerHTML = mobile.Display();
+        document.getElementById("d2").innerHTML = mobile.Discountprice();
+
+    </script>
+</body>
+</html>

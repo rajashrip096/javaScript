@@ -1,7 +1,9 @@
 <html>
-<head></head>
+<head>
+</head>
 <body>
     <div id="d1"></div>
+    <div id="d2"></div>
     <script>
         // product-> id, name,price  - display function  , discount-> 10 %
         var prod = {
@@ -19,8 +21,9 @@
                 return result;
             }
         }
-            document.getElementById("d1").innerHTML = prod.Display();
-        
+        document.getElementById("d1").innerHTML = prod.Display();
+        document.getElementById("d2").innerHTML = prod.Discount();
+
     </script>
 </body>
 </html>
