@@ -1,0 +1,44 @@
+<html>
+<head></head>
+<body>
+    Enter the number :<input type="text" id="t1" /><br />
+    Enter the number :<input type="text" id="t2" /><br />
+    Result           :<input type="text" id="t3" /><br />
+    <input type="button" value="Addition" onclick="addition()" />
+    <input type="button" value="Subtraction" onclick="subtraction()" />
+    <input type="button" value="Multiplication" onclick="multiplication()" />
+    <input type="button" value="Division" onclick="division()" />
+    <b id="b1"></b>
+    <script>
+        function addition() {
+            var n1 = document.getElementById("t1").value;
+            var n2 = document.getElementById("t2").value;
+            var sum = parseInt(n1) + parseInt(n2);
+            document.getElementById("t3").value = sum;
+            document.get.ElementById("b1").innerHTML = "Addition is " + sum;
+        }
+        function subtraction() {
+            var n1 = document.getElementById("t1").value;
+            var n2 = document.getElementById("t2").value;
+            var sub = parseInt(n1) - parseInt(n2);
+            document.getElementById("t3").value = sub;
+            document.get.ElementById("b1").innerHTML = "Subtraction is " + sub;
+        }
+        function multiplication() {
+            var n1 = document.getElementById("t1").value;
+            var n2 = document.getElementById("t2").value;
+            var mul = parseInt(n1) * parseInt(n2);
+            document.getElementById("t3").value = mul;
+            document.get.ElementById("b1").innerHTML = "Multiplication is " + mul;
+        }
+        function division() {
+            var n1 = document.getElementById("t1").value;
+            var n2 = document.getElementById("t2").value;
+            var div = parseInt(n1) / parseInt(n2);
+            document.getElementById("t3").value = div;
+            document.get.ElementById("b1").innerHTML = "Division is " + div;
+        }
+    </script>
+
+</body>
+</html>

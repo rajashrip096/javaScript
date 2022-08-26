@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div id="d1">
+
+    </div>
+    <div id="d2">
+
+    </div>
+
+    <script>
+
+        //Create an array of 5 numbers , & implement all the methods
+        var number = [1, 2, 3, 4, 5];
+
+
+
+        number.push(6); // add element at the last
+        number.unshift(7); // add element at the first position
+       // number.unshift(8);
+        number.pop(); // remove the last element
+        number.shift();  // remove the first element
+
+        // splice  -> insert an element in between in an array , at same time we can replace the elemtn
+         number.splice(1, 0, 10,11,12);
+
+        var newlist = number.slice(1,5);   //6-1= 5   -> <7
+        number.sort();
+         number.reverse();
+        document.getElementById("d1").innerHTML = number;
+        document.getElementById("d2").innerHTML = newlist;
+
+    </script>
+
+
+</body>
+</html>

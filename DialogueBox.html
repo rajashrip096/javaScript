@@ -1,0 +1,33 @@
+<html>
+<head>
+</head>
+<body>
+    Enter the number :<input type="text" id="t1" /><br />
+    Enter the number :<input type="text" id="t2" /><br />
+    Result           :<input type="text" id="t3" /><br />
+    <input type="button" value="Addition" onclick="addition()" />
+    <input type="button" value="Pay" onclick="pay()" />
+    <b id="b1"></b>
+    <script>
+        function addition() {
+            var n1 = document.getElementById("t1").value;
+            var n2 = document.getElementById("t2").value;
+            var sum = parseInt(n1) + parseInt(n2);
+            document.getElementById("t3").value = sum;
+            document.get.ElementById("b1").innerHTML = "Addition is " + sum;
+        }
+
+        function pay() {
+            var result = confirm("Do you wanto to make payment ?");
+            if (result == true) {
+                alert("payment done successfully");
+            }
+            else {
+                alert("Payment cancelled");
+            }
+        }
+
+    </script>
+
+</body>
+</html>
