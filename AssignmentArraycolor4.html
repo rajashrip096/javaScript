@@ -2,12 +2,35 @@
 <head></head>
 <body>
     <div id="d1"></div>
-    <script>
-        //4. Create an array of 5 colors & display in html with ordered list
-        var color = ["red", "blue", "yellow", "pink", "green"];
-        color.sort();
-        //color.orderlist();
-        document.getElementById("d1").innerHTML = color;
+    
+    <ul id="myList"></ul>
+
+        <script>
+            //4. Create an array of 5 colors & display in html with ordered list
+            //var color = ["red", "blue", "yellow", "pink", "green"];
+            // color.sort();
+            //color.orderlist();
+            //document.getElementById("d1").innerHTML = color;
+
+            
+
+          let data = ["Red", "Blue", "Yellow", "Black" ,"Pink"];
+
+
+
+          let list = document.getElementById("myList");
+
+
+
+          //data.foreach((item) => {
+
+            let li = document.createElement("li").innerText = item;
+
+            list.appendChild(li);
+
+          });
+
+    
     </script>
 </body>
 </html>

@@ -3,6 +3,7 @@
 <body>
     <div id="d1"></div>
     <div id="d2"></div>
+    <div id="d3"></div>
     <script>
         //2. Create an object student with their 3 subjects marks, create a function to 
         //calculate total & percentage
@@ -20,18 +21,19 @@
             Calculate: function () {
                     var total;
                 total = this.phy + this.chem + this.math;
-                return total;
+                return "Total:"+total;
               
             },
             Percentage: function () {
                 var percentage;
-                percentage = (total / 300)*100;
-                return percentage;
+                
+                percentage = ((this.phy+this.chem+this.math)/300)*100;
+                return "perc :"+percentage;
             }
         }
         document.getElementById("d1").innerHTML = student.Display();
         document.getElementById("d2").innerHTML = student.Calculate();
-        document.getElementById("d2").innerHTML = student.Percentage();
+        document.getElementById("d3").innerHTML = student.Percentage();
 
     </script>
 </body>

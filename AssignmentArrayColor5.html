@@ -3,13 +3,29 @@
 <body>
     <div id="d1"></div>
     <div id="d2"></div>
+    Enter color:<input type="text" id="t1"><br>
+    <input type="button" value="Add" onclick="AddColor()"><br>
+    <input type="button" value="Show" onclick="display()"><br>
+
+    <b id="b1"></b>
+    <div id="d1"> </div>
     <script>
-        //Create a html page, to add element to the array of colors , on click of button , 
-        //add color in to the existing color list, display the list
-        var colors = ["red", "blue", "pink", "yellow", "green", "black"];
-        <input type="button" value="color" onclick="color()" />
-        var newcolor = slice.onclick(color);
-        document.getElementById("d1").innerHTML = newcolor;
-    </script>
-</body>
-</html>
+        var arr = ["pink", "Red", "Blue", "Purple", "Yellow"];
+        function AddColor()
+        {
+            var n1 = document.getElementById("t1").value;
+            arr.push(n1);
+        }
+        function Display()
+        {
+            document.write(arr);
+        }
+       // function remove()
+        //{
+        //    arr.pop();
+        //    document.write(arr);
+            
+       // }
+        </script>
+</body >
+</html >
