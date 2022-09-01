@@ -5,21 +5,22 @@
 }
 
 .footer {
-    background-color: #172337;
+    background-color: #212F3C;
     height: 250px;
-    color: #BFC9CA;
+    color: white;
 }
 
 .fa-twitter, .fa-facebook-square {
-    color: #33C1FF;
+    color: #2D7CDA;
 }
 
 .footer .nav-link {
+    
     color: white;
 }
 
 .fa-youtube-play, .fa-instagram {
-    color: #EC7063;
+    color: #C0392B;
 }
 
 .line {
